@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792908355306",
+    "project_id": "freelanceclone",
+    "storage_bucket": "freelanceclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792908355306:android:d9c11474958dfa1ffe2993",
+        "android_client_info": {
+          "package_name": "com.example.freelanceclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792908355306-cbepb1tsomuoceum6u5umbunk23oaqir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oAj1bYHNhO4Vq7v3qZ9-15Z1Wn2okrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792908355306-cbepb1tsomuoceum6u5umbunk23oaqir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

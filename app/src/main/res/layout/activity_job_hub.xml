@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_registration"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".JobHubActivity">
+
+    <android.widget.Button
+        android:id="@+id/bt_openings"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/circlebutton"
+        android:text="Submit File \n(worker)"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="List of employees"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/circlebutton"
+
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_openings"
+        app:layout_constraintTop_toTopOf="@+id/bt_openings" />
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/circlebutton"
+        android:text="Payment Status"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/bt_openings"
+        app:layout_constraintTop_toBottomOf="@+id/bt_openings" />
+
+    <android.widget.Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circlebutton"
+        android:text="Quit \n(Worker)"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_j_title"
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/background_textview"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Description:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/tv_j_desc"
+        android:layout_width="360dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_textview"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Payout:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_j_desc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_j_desc" />
+
+    <TextView
+        android:id="@+id/tv_j_pay"
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:background="@drawable/background_textview"
+        android:padding="5dp"
+        android:text="Payout"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_j_title"
+        app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

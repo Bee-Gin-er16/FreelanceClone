@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_registration"
+    android:layout_height="match_parent"
+    tools:context=".JobDescription">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job ID:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/edit_job_title" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:text="Job Title:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edit_job_title"
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_textview"
+        android:padding="3dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/edit_job_id"
+        android:layout_width="278dp"
+        android:layout_height="32dp"
+        android:background="@drawable/background_textview"
+        android:padding="3dp"
+        android:text="TextView"
+        android:textColor="@color/myred"
+        app:layout_constraintStart_toStartOf="@+id/edit_job_title"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Additional Details:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/edit_job_id" />
+
+    <TextView
+        android:id="@+id/edit_desc_info"
+        android:layout_width="360dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_textview"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="Job Payout:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/edit_desc_info" />
+
+    <TextView
+        android:id="@+id/edit_job_payout"
+        android:layout_width="351dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_textview"
+        android:padding="5dp"
+        android:text="Payout"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/bt_check_invites"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="See Requests"
+        app:layout_constraintStart_toStartOf="@+id/edit_job_payout"
+        app:layout_constraintTop_toBottomOf="@+id/edit_mode_payment" />
+
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/edit_job_payout"
+        app:layout_constraintTop_toTopOf="@+id/bt_check_invites" />
+
+    <TextView
+        android:id="@+id/edit_mode_payment"
+        android:layout_width="351dp"
+        android:layout_height="32dp"
+        android:background="@drawable/background_textview"
+        android:includeFontPadding="true"
+        android:padding="5dp"
+        android:text="Payment method"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/edit_job_payout"
+        app:layout_constraintTop_toBottomOf="@+id/edit_job_payout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

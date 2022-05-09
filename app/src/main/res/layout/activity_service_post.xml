@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/bg_registration"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ServicePost">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Service offered (one at a time to test)"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_service_title"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_textview2"
+            android:ems="10"
+            android:hint="More entries will be separated later"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/myred"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" Desired Payment(Minimum and Maximum)\n Pesos for now "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_service_title" />
+
+        <EditText
+            android:id="@+id/et_min_desired"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/background_textview2"
+            android:ems="10"
+            android:hint="Minimum"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColorHint="#0C8C07"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <EditText
+            android:id="@+id/et_max_desired"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/background_textview2"
+            android:ems="10"
+            android:hint="Maximum"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColorHint="#F3DC1111"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/et_min_desired"
+            app:layout_constraintTop_toBottomOf="@+id/et_min_desired" />
+
+        <Button
+            android:id="@+id/bt_postService"
+            android:layout_width="141dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_add_desc" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="141dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="32dp"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bt_postService" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Additional Details Here"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_max_desired" />
+
+        <EditText
+            android:id="@+id/et_add_desc"
+            android:layout_width="357dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_textview2"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Additional info about the service/s your offering"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="@color/myred"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

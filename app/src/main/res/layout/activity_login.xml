@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="329dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:text="Login(Beta)"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_surface"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/bt_openings"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_design"
+            android:text="Job Openings"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <android.widget.Button
+            android:id="@+id/bt_post"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/button_design"
+            android:text="Post in job billboard"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_openings"
+            app:layout_constraintTop_toTopOf="@+id/bt_openings" />
+
+        <android.widget.Button
+            android:id="@+id/bt_edit_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_design"
+            android:text="Your Profile"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/bt_schedule"
+            app:layout_constraintTop_toBottomOf="@+id/bt_schedule" />
+
+        <android.widget.Button
+            android:id="@+id/bt_logout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_design"
+            android:backgroundTint="@color/tealpurple"
+            android:text="Logout"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_message"
+            app:layout_constraintTop_toTopOf="@+id/bt_edit_profile" />
+
+        <android.widget.Button
+            android:id="@+id/bt_service"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_design"
+            android:text="Advertise your \nServices"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_post"
+            app:layout_constraintTop_toTopOf="@+id/bt_workers" />
+
+        <android.widget.Button
+            android:id="@+id/bt_schedule"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_design"
+            android:text="Schedule"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/bt_workers"
+            app:layout_constraintTop_toBottomOf="@+id/bt_workers" />
+
+        <android.widget.Button
+            android:id="@+id/bt_message"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_design"
+            android:text="Messaging"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_service"
+            app:layout_constraintTop_toTopOf="@+id/bt_schedule" />
+
+        <android.widget.Button
+            android:id="@+id/bt_workers"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_design"
+            android:text="Offered \n Services"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/bt_openings"
+            app:layout_constraintTop_toBottomOf="@+id/bt_openings" />
+
+        <android.widget.Button
+            android:id="@+id/bt_check_upload"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:background="@drawable/button_design"
+            android:text="Check upload picture"
+            app:layout_constraintStart_toStartOf="@+id/bt_edit_profile"
+            app:layout_constraintTop_toBottomOf="@+id/bt_edit_profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

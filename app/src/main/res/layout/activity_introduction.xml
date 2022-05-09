@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_registration"
+        tools:context=".Introduction">
+
+        <EditText
+            android:id="@+id/et_firstname"
+            android:layout_width="340dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="92dp"
+            android:background="@drawable/background_textview"
+            android:ems="10"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/et_lastname"
+            android:layout_width="340dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="92dp"
+            android:background="@drawable/background_textview"
+            android:ems="10"
+            android:hint="Last name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_firstname" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="340dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="92dp"
+            android:background="@drawable/background_textview"
+            android:ems="10"
+            android:hint="Ex: 0917348239"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_lastname" />
+
+        <android.widget.Button
+            android:id="@+id/bt_full_reg"
+            android:layout_width="300dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_design"
+            android:text="Complete Registration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_spinner" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="340dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="36dp"
+            android:text="About You:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_datepick"
+            android:layout_width="340dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/background_textview"
+            android:padding="10dp"
+            android:text="Click here to input birthdate"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_contact" />
+
+        <Spinner
+            android:id="@+id/status_spinner"
+            android:layout_width="340dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Employer or an Employee? Choose from this spinner"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_datepick" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/status_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/status_spinner" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="194dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

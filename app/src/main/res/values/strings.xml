@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FreelanceClone</string>
+    <string-array name="economic_status">
+        <item>Employer</item>
+        <item>Employee</item>
+    </string-array>
+    <string-array name="Choices">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Pay_Method">
+        <item>On-Hand</item>
+        <item>E-Wallets(Not yet implemented)</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
